@@ -6,7 +6,7 @@
 * Пишим pip install requirements.txt
 
 # Запуск
-* python HZF Bomber.py
+* python "HZF Bomber.py"
 
 
 # Важная информация
