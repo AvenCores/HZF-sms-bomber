@@ -1180,7 +1180,7 @@ def StartThread():
             if len(number) < 12 or file_name == None:
                 messagebox.showinfo(title='Warning', message='Неправильный формат номера')
             else:
-                messagebox.showinfo(title='GOOD', message='Бомбинг запущен')
+                messagebox.showinfo(title='Запущено', message='Бомбинг запущен')
                 for i in range(thrade):
                     t = threading.Thread(target=spam, args=(number,))
                     t.start()
@@ -1193,7 +1193,7 @@ def StartThread():
         if len(number) < 12:
             messagebox.showinfo(title='Warning', message='Неправильный формат номера')
         else:
-            messagebox.showinfo(title='GOOD', message='Бомбинг запущен')
+            messagebox.showinfo(title='Следи за процессом в Terminal', message='Бомбинг запущен')
             for i in range(thrade):
                 t = threading.Thread(target=spam, args=(number,))
                 t.start()
@@ -1225,7 +1225,7 @@ label1.place(x=15, y=55)
 label2 = Label(text='Потоки (Максимум 20)', fg='#912700', bg='#849187')
 label2.pack()
 label2.place(x=50, y=90)
-poetry = 'Смс бомбер от команды HZF'
+poetry = 'Смс бомбер by HZF'
 label3 = Label(text=poetry, justify=CENTER)
 label3.place(x=10, y=370)
 crack = Button(text='Запустить', height=2, width=11, background='green', command=StartThread)
