@@ -1,9 +1,9 @@
 # Установка
 * Скачиваем архив
 * Распаковываем в удобную нам директорию
-* Запускаем CMD
+* Запускаем Terminal
 * Переходим в корень с бомбером
-* Пишим pip install requirements.txt
+* Пишим python Install.py
 
 # Запуск
 * python "HZF Bomber.py"
