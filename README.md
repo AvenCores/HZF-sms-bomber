@@ -6,7 +6,7 @@
 * Пишим python Install.py
 
 # Запуск
-* python "HZF Bomber.py"
+* python "HZF Bomber V1.2.py"
 
 
 # Важная информация
