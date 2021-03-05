@@ -12,7 +12,7 @@ def download():
         ufr = requests.get("https://github.com/AvenCores/HZF-sms-bomber/releases/download/V1.2/HZF.SMS.BOMBER.V1.2.zip")
         f.write(ufr.content)
         f.close()
-        messagebox.showinfo(title="Удачно", message='Бомбер был скачен в Download')
+        messagebox.showinfo(title="Успешно!", message='Бомбер был скачан в Download')
         return "exit"
 
 file = Button(text='Скачать HZF Bomber V1.2', command=download)
