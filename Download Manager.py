@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-import os
+from os import mkdir
 import requests
 
 root = Tk()
@@ -9,7 +9,7 @@ root.geometry('350x120')
 root.resizable(width=False, height=False)
 
 def download():
-        os.mkdir("c://Bomber")
+        mkdir("c://Bomber")
         f=open(r'c:/Bomber/HZF Bomber.zip',"wb")
         ufr = requests.get("https://github.com/AvenCores/HZF-sms-bomber/releases/download/V1.2/HZF.SMS.BOMBER.V1.2.zip")
         f.write(ufr.content)
