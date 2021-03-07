@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-from os import mkdir
+import os
 import requests
 
 root = Tk()
@@ -9,7 +9,11 @@ root.geometry('350x140')
 root.resizable(width=False, height=False)
 
 def downloadSms():
-        mkdir("c://Bomber")
+        path = 'c:/Bomber'
+        try:
+            os.mkdir(path)
+        except OSError as error:
+            print(error) 
         f=open(r'c:/Bomber/HZF Bomber.zip',"wb")
         ufr = requests.get("https://github.com/AvenCores/HZF-sms-bomber/releases/download/V1.2/HZF.SMS.BOMBER.V1.2.zip")
         f.write(ufr.content)
@@ -18,13 +22,17 @@ def downloadSms():
         return "exit"
 
 def downloadEmail():
-    mkdir("c//Bomber")
-    f=open(r'c/Bomber/HZF Email Bomber.zip', "wb")
-    ufr = requests.get("https://github.com/AvenCores/HZF-Email-Bomber/releases/download/V1.0/Email.Bomber.by.HZF.zip")
-    f.write(ufr.content)
-    f.close()
-    messagebox.showinfo(title="Удачно", message='Email Bomber был скачен в папку C:\Bomber')
-    return "exit"
+        path = 'c:/Bomber'
+        try:
+            os.mkdir(path)
+        except OSError as error:
+            print(error)
+        f=open(r'c:/Bomber/HZF Email Bomber.zip', "wb")
+        ufr = requests.get("https://github.com/AvenCores/HZF-Email-Bomber/releases/download/V1.0/Email.Bomber.by.HZF.zip")
+        f.write(ufr.content)
+        f.close()
+        messagebox.showinfo(title="Удачно", message='Email Bomber был скачен в папку C:\Bomber')
+        return "exit"
 
 
 file = Button(text='Скачать HZF Bomber V1.2', command=downloadSms)
