@@ -12,8 +12,6 @@
 # Важная информация
 * Бомбер работает только на Windows и Linux
 
-* Download Manager работает только на Windows
-
 * Если появились вопросы, то пишите мне в Телеграм! @avencores
 
 # Telegram Channel
