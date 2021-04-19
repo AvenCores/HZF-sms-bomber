@@ -12,7 +12,7 @@ import threading, os, sys, time
 colorama.init()
 root = Tk()
 root.title('SMS BOMBER BY HZF')
-root.geometry('500x400+300+200')
+root.geometry('525x400')
 
 def good():
     print(colored('SMS sent', 'green'))
@@ -1153,7 +1153,7 @@ def download():
 var = IntVar()
 check = Checkbutton(root, text='Использовать PROXY', variable=var, onvalue=1, offvalue=0)
 check.pack()
-check.place(x=350, y=50)
+check.place(x=340, y=55)
 
 def StartThread():
     number = text1.get('1.0', 'end')
@@ -1219,10 +1219,10 @@ file.place(x=15, y=120)
 file = Button(text='Загрузить PROXY из интернета', command=download)
 file.pack()
 file.place(x=15, y=160)
-label1 = Label(text='Введите номер в формате 7XXXXXXXXXX', fg='#912700', bg='#849187')
+label1 = Label(text='Введите номер в формате 7XXXXXXXXXX', fg='#FFFFFF', bg='#849187')
 label1.pack()
 label1.place(x=15, y=55)
-label2 = Label(text='Потоки (Максимум 20)', fg='#912700', bg='#849187')
+label2 = Label(text='Потоки (Максимум 20)', fg='#FFFFFF', bg='#849187')
 label2.pack()
 label2.place(x=50, y=90)
 poetry = 'Смс бомбер by HZF'
