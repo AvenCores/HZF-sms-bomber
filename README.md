@@ -16,3 +16,7 @@
 
 # Telegram Channel
 * У бомбера есть свой Telegram-канал! @hzfnews
+
+# Меню
+
+![image](https://user-images.githubusercontent.com/64781822/115301002-5256f280-a169-11eb-8880-240a0fd19cb8.png)
