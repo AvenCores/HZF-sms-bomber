@@ -1151,9 +1151,6 @@ def download():
 
 
 var = IntVar()
-check = Checkbutton(root, text='Использовать PROXY', variable=var, onvalue=1, offvalue=0)
-check.pack()
-check.place(x=340, y=55)
 
 def StartThread():
     number = text1.get('1.0', 'end')
@@ -1209,22 +1206,16 @@ root.resizable(False, False)
 
 text1 = Text(root, height=1, width=15, font='Ubuntu')
 text1.pack()
-text1.place(x=15, y=25)
+text1.place(x=180, y=25)
 text2 = Text(root, height=1, width=2, font='Ubuntu')
 text2.pack()
-text2.place(x=15, y=85)
-file = Button(text='Выбрать файл с PROXY', command=fileopen)
-file.pack()
-file.place(x=15, y=120)
-file = Button(text='Загрузить PROXY из интернета', command=download)
-file.pack()
-file.place(x=15, y=160)
+text2.place(x=180, y=90)
 label1 = Label(text='Введите номер в формате 7XXXXXXXXXX', fg='#FFFFFF', bg='#849187')
 label1.pack()
-label1.place(x=15, y=55)
+label1.place(x=180, y=55)
 label2 = Label(text='Потоки (Максимум 20)', fg='#FFFFFF', bg='#849187')
 label2.pack()
-label2.place(x=50, y=90)
+label2.place(x=210, y=90)
 poetry = 'Смс бомбер by HZF'
 label3 = Label(text=poetry, justify=CENTER)
 label3.place(x=10, y=370)
