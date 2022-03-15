@@ -19,4 +19,4 @@
 
 # Меню
 
-![image](https://user-images.githubusercontent.com/64781822/123986107-b2221300-d9ce-11eb-844f-31ec941f1d05.png)
+![Снимок (1)](https://user-images.githubusercontent.com/64781822/158375678-afd1c6cb-2a72-4c98-86e5-33c6bdc4f307.png)
