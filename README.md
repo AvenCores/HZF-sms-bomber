@@ -6,7 +6,7 @@
 * Запускаем установку доп. компонентов: python3 Install.py
 
 # Запуск
-* Вводим в Terminal: python3 "HZF Bomber V1.3.pyw"
+* Вводим в Terminal: python3 "HZF Bomber V1.4.pyw"
 
 
 # Важная информация
