@@ -11,15 +11,15 @@ from random import randint
 import threading, os, sys, time
 colorama.init()
 root = Tk()
-root.title('SMS BOMBER BY HZF')
+root.title('SMS BOMBER BY HZF (RUSSIA)')
 root.geometry('525x400')
 
-def good():
-    print(colored('SMS sent', 'green'))
+def good():                                 # legacy мусор
+    print(colored('SMS sent', 'green'))     # legacy мусор
 
 
-def error():
-    print(colored('SMS not sent', 'red'))
+def error():                                # legacy мусор
+    print(colored('SMS not sent', 'red'))   # legacy мусор
 
 
 def spamNOproxy(phone):
@@ -593,16 +593,22 @@ text1.place(x=180, y=25)
 text2 = Text(root, height=1, width=2, font='Ubuntu')
 text2.pack()
 text2.place(x=180, y=90)
-label1 = Label(text='Введите номер в формате 7XXXXXXXXXX', fg='#FFFFFF', bg='#849187')
+label1 = Label(text='Введите номер в формате 7XXXXXXXXXX', fg='white', bg='#514E4D')
 label1.pack()
 label1.place(x=180, y=55)
-label2 = Label(text='Потоки (Максимум 20)', fg='#FFFFFF', bg='#849187')
+label2 = Label(text='Потоки (Максимум 20)', fg='white', bg='#514E4D')
 label2.pack()
 label2.place(x=210, y=90)
 poetry = 'Смс бомбер by HZF'
-label3 = Label(text=poetry, justify=CENTER)
+label3 = Label(text=poetry, bg="gray", fg="white", justify=CENTER)
 label3.place(x=10, y=370)
-crack = Button(text='Запустить', height=2, width=11, background='green', command=StartThread)
+poetry = 'Последнее обновление сервисов: 23.04.2021'
+label3 = Label(text=poetry, bg="gray", fg="white", justify=CENTER)
+label3.place(x=270, y=370)
+poetry = 'Последнее обновление бомбера: 23.04.2021'
+label3 = Label(text=poetry, bg="gray", fg="white", justify=CENTER)
+label3.place(x=270, y=340)
+crack = Button(text='Запустить', height=2, width=11, background='green', fg="white", activebackground="red", command=StartThread)
 crack.pack()
-crack.place(x=200, y=300)
+crack.place(x=200, y=280)
 root.mainloop()
