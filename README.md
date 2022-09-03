@@ -8,7 +8,7 @@
 * Запускаем установку доп. компонентов: **python Install.py**
 
 # Запуск
-* Вводим в Terminal: **python3 "HZF Bomber V1.4.pyw"**
+* Вводим в Terminal: **python "HZF Bomber V1.4.pyw"**
 
 # Важная информация
 * Бомбер работает только на Windows и Linux
